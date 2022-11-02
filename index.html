@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GithubFav 2.0</title>
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./assets/logo.svg" alt="">
+            <div class="search">
+                <input type="text" name="user" id="user" placeholder="Digite o Github username que quer favoritar">
+                <button type="submit">
+                    <img src="./assets/star.svg" alt="">
+                    Favoritar
+                </button>
+            </div>
+
+        </header>
+        <div id="app">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Repositories</th>
+                        <th>Followers</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+            <div class="content-none">
+                <img src="./assets/estrela.svg" alt="">
+                <p>Nenhum favorito ainda</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

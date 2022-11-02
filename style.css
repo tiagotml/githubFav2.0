@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    padding: 13rem 16rem 11.6rem 16rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8.7rem;
+}
+
+.search {
+    display: flex;
+    gap: .8rem;
+}
+
+.search input {
+    padding: 1.6rem;
+    width: 46.2rem;
+    background-color: #06181C;
+    border-radius: .5rem;
+    border: none;
+    color: #7c7c8a;
+
+}
+
+.search button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #065E7C;
+    border-radius: .5rem;
+    padding: 1.2rem 3.2rem;
+    font-style: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.content-none p {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 2.4rem;
+    color: #4e5455;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.content-none {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    background-color: #030B0D;
+    height: 62.4rem;
+    justify-content: center;
+}
+
+#app {
+    border: 1px solid #4A808C;
+    border-radius: 12px;
+}
+
+#app table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#app table thead {
+    background-color: #092d38;
+    text-align: left;
+}
+
+#app table thead th:nth-child(1) {
+    width: 50%;
+}
+
+#app table thead th {
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #E1E1E6;
+    line-height: 3.2rem;
+    font-style: normal;
+}
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px) {
+    .container {
+        padding: 13rem 2rem 11.6rem 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .search button {
+        width: 100%;
+    }
+
+    .content-none {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media(min-width: 970px){
+    .container {
+        padding: 13rem 16rem 11.6rem 16rem;
+    }
+    header{
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+}

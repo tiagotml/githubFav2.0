@@ -85,12 +85,16 @@ table tr:nth-child(even) {
     background: #06181C;
 }
 
-#app table {
-    border-collapse: collapse;
+main {
     border: 1px solid #4A808C;
     border-radius: 12px;
+
+}
+
+main table {
     width: 100%;
-    ;
+    border-collapse: collapse;
+
 }
 
 #app table thead {

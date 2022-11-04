@@ -31,6 +31,16 @@ export class Favorites {
             console.log(err.message);
         }
     }
+    returnaQuantidadeLinhasTabela() {
+         if(this.entries.length > 0) {
+            const contentNone = document.querySelector('.content-none');
+            contentNone.classList.add('hide')
+         }
+         else{
+            const contentNone = document.querySelector('.content-none');
+            contentNone.classList.remove('hide')
+         }
+    }
 }
 export class FavoritesView extends Favorites {
     constructor(root) {
@@ -84,6 +94,8 @@ export class FavoritesView extends Favorites {
         return tr;
     }
     update() {
+
+        this.returnaQuantidadeLinhasTabela();
         this.removeAllTr();
         this.entries.forEach((user) => {
             const tr = this.createRow();
